@@ -1,0 +1,21 @@
+{
+	"version": "0.1.0",
+	"command": "echo",
+	"isShellCommand": true,
+	"args": ["global"],
+	"showOutput": "always",
+	"echoCommand": true,
+	"suppressTaskName": true,
+	"tasks": [
+	  {
+		"taskName": "hello",
+		"args": ["Hello World"],
+		"suppressTaskName": true // bao gom args global
+	  },
+	  {
+		"taskName": "bye",
+		"args": ["Good Bye"],
+		"suppressTaskName": false
+	  }
+	]
+  }

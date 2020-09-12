@@ -1,0 +1,27 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+	  {
+		"label": "hello",
+		"command": "echo",
+		"args": ["Hello"],
+
+	  },
+	  {
+		"label": "goodbye",
+		"command": "echo",
+		"args": ["goodbye"],
+		"dependsOn": ["hello"]
+	  },
+	  {
+		"label": "learn",
+		"command": "echo",
+		"group": {
+			"kind": "build",
+			"isDefault": true
+		},
+		"args": ["learn"],
+		"dependsOn": ["goodbye"]
+	  }
+	]
+  }
